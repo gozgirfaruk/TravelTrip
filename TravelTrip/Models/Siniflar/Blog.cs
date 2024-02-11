@@ -12,7 +12,9 @@ namespace TravelTrip.Models.Siniflar
         public  DateTime  Year { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
-        public ICollection<Yorumlar> Yorumlars { get; set; }
+        public string  Explanation { get; set; }
+
+      //  public ICollection<Yorumlar> Yorumlars { get; set; }
 
     }
 }

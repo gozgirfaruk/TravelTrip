@@ -1,0 +1,21 @@
+﻿
+@using TravelTrip.Models.Siniflar
+@model List<Blog>
+
+<div class="padding">
+    <div class="grids">
+        <div class="box1">
+            <div class="padding">
+                <h4>En Popüler Bloglar</h4>
+                <ul class="list list-pad">
+                    @{ int a = 0;}
+                    @foreach (var item in Model)
+                    {
+                        <li class="list-bg"><span>@{a++;} @a.</span><a href="/Blog/BlogDetail/@item.ID">@item.Header</a></li>
+
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

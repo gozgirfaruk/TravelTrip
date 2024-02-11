@@ -1,5 +1,7 @@
-﻿@using TravelTrip.Models.Siniflar
-@model List<Blog>
+﻿
+@model TravelTrip.Models.Siniflar.BlogYorum
+
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -34,7 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="col-md-8 single-main">
 
-                @foreach (var item in Model)
+                @foreach (var item in Model.deger1)
                 {
                     <div class="single-grid">
                         <img src=@item.ImageUrl alt="" />
@@ -48,7 +50,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                             </p>
                         </b>
-                        <b><p style="text-align:right">@item.Year</p></b>
+                        <b><p style="text-align:right">@item.Year.ToString("dd.MM.yyyy")</p></b>
 
                     </div>
                 }
@@ -56,13 +58,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
             <div class="col-md-4 side-content">
                 <div class="recent">
-                    <h3>Son Blogum</h3>
-                    <ul>
-                        <li><a href="#">Aliquam tincidunt mauris</a></li>
-                        <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-                        <li><a href="#">Nunc dignissim risus consecu</a></li>
-                        <li><a href="#">Cras ornare tristiqu</a></li>
-                    </ul>
+                    <h3>Son Eklenenler</h3>
+                    @foreach (var item in Model.deger3)
+                    {
+                        <ul>
+                            <li><a href="#">@item.Header</a></li>
+
+                        </ul>
+                    }
+
                 </div>
                 <div class="comments">
                     <h3>Son Yorumlar</h3>

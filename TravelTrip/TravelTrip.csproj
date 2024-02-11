@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
+    <Compile Include="Models\Siniflar\BlogYorum.cs" />
     <Compile Include="Models\Siniflar\Konum.cs" />
     <Compile Include="Models\Siniflar\AnaSayfa.cs" />
     <Compile Include="Models\Siniflar\Blog.cs" />
@@ -168,13 +169,19 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Template\Blog\css\bootstrap.css" />
     <Content Include="Template\Blog\css\style.css" />
+    <Content Include="Template\Blog\images\antep.jpg" />
     <Content Include="Template\Blog\images\avatar.png" />
+    <Content Include="Template\Blog\images\baharat.jpg" />
+    <Content Include="Template\Blog\images\elsanat.jpg" />
+    <Content Include="Template\Blog\images\halkoyun.jpg" />
     <Content Include="Template\Blog\images\icon3.png" />
     <Content Include="Template\Blog\images\logo.jpg" />
     <Content Include="Template\Blog\images\more.png" />
-    <Content Include="Template\Blog\images\mozaik.jpg" />
+    <Content Include="Template\Blog\images\mzk.jpg" />
     <Content Include="Template\Blog\images\rumkale.png" />
     <Content Include="Template\Blog\images\search.png" />
+    <Content Include="Template\Blog\images\tatli.jpg" />
+    <Content Include="Template\Blog\images\yemek.jpg" />
     <Content Include="Template\Blog\js\easing.js" />
     <Content Include="Template\Blog\js\jquery.min.js" />
     <Content Include="Template\Blog\js\move-top.js" />
@@ -234,6 +241,7 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\BlogDetail.cshtml" />
+    <Content Include="Views\Home\PartialThisWeek.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
