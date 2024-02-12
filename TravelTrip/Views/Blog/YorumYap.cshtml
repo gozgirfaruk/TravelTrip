@@ -1,0 +1,14 @@
+﻿@model TravelTrip.Models.Siniflar.Yorumlar 
+
+<div class="content-form">
+        <h3>Yorum Yap</h3>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.deger" name="BlogId"  />
+            <input type="text" placeholder="Ad Soyad"  name="UserName" required />
+            <input type="text" placeholder="Email"  name="Mail" required />
+            <textarea placeholder="Mesaj" name="Comment"></textarea>
+            
+
+            <input type="submit" value="Gönder" />
+        </form>
+    </div>

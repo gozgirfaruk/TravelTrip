@@ -10,11 +10,13 @@ namespace TravelTrip.Controllers
     public class AboutController : Controller
     {
         // GET: About
+
         TravelContext db = new TravelContext();
+        [Authorize]
         public ActionResult Index()
         {
             var values = db.Hakkimizdas.ToList();
-            
+
             return View(values);
         }
 

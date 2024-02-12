@@ -1,0 +1,38 @@
+﻿@model TravelTrip.Models.Siniflar.Blog
+@{
+    ViewBag.Title = "CreateBlog";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="work-section section">
+    <div class="container">
+
+        <form class="form-group" method="post">
+
+        
+            <label style="color: #09104C">Başlık</label>
+            @Html.TextBoxFor(x=>x.Header, new {@class="form-control", style= "color :brown" })
+            <br />
+
+            <label style="color: #09104C">Tarih</label>
+            @Html.TextBoxFor(x => x.Year, new { @class = "form-control", style = "color :brown" })
+            <br />
+
+            <label style="color:#09104C">Tanıtım Mesajı</label style="color:saddlebrown">
+            @Html.TextBoxFor(x => x.Description, new { @class = "form-control", style = "color :brown" })
+            <br />
+
+            <label style="color: #09104C">Resim Dosyası</label>
+            @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control", style = "color :brown" })
+            <br />
+
+            <label style="color: #09104C">Açıklama</label>
+            @Html.TextAreaFor(x => x.Explanation, new { @class = "form-control", style = "color :brown" })
+            <br />
+            <button class="btn btn-success">Kaydet</button>
+        </form>
+
+
+
+    </div>
+</section>

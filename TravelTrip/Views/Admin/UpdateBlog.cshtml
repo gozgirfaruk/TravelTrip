@@ -1,0 +1,34 @@
+﻿@model TravelTrip.Models.Siniflar.Blog
+@{
+    ViewBag.Title = "UpdateBlog";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@using (Html.BeginForm("BlogGuncelle", "Admin", FormMethod.Post))
+{
+
+
+    <section class="work-section section">
+        <div class="container">
+
+            <label style="color: #09104C">ID</label>
+            @Html.TextBoxFor(x => x.ID, new { @class = "form-control", style = "width:900px; color:brown;", @readonly="readonly"})
+            <br />
+            <label style="color: #09104C">Başlık</label>
+            @Html.TextBoxFor(x => x.Header, new { @class = "form-control", style = "width:900px; color:brown;" })
+            <br />
+            <label style="color: #09104C">Tarih</label>
+            @Html.TextBoxFor(x => x.Year, new { @class = "form-control", style = "width:900px; color:brown;" })
+            <br />
+            <label style="color: #09104C">Tanıtım Metni</label>
+            @Html.TextBoxFor(x => x.Description, new { @class = "form-control", style = "width:900px; color:brown;" })
+            <br />
+            <label style="color: #09104C">Resim Yolu</label>
+            @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control", style = "width:900px; color:brown;" })
+            <br />
+            <label style="color: #09104C">Detaylı Açıklama</label>
+            @Html.TextAreaFor(x => x.Explanation,15,1, new { @class = "form-control", style = "width:900px; color:brown;" })
+
+            <button class="btn btn-primary">Güncelle</button>
+        </div>
+    </section>
+}

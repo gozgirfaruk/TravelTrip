@@ -1,0 +1,14 @@
+﻿@using TravelTrip.Models.Siniflar
+@model List<Yorumlar>
+<div class="comments">
+    <h3>Son Yorumu Yapanlar / Başlıklar</h3>
+    @foreach (var item in Model)
+    {
+
+
+        <ul>
+            <li><a href="#">@item.UserName </a> / <a href="#">@item.Blog.Header</a></li>
+
+        </ul>
+    }
+</div>

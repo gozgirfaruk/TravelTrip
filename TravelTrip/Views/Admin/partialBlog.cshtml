@@ -1,0 +1,29 @@
+﻿@using TravelTrip.Models.Siniflar
+@model List<Blog>
+<section class="work-section section" id="section-1">
+    <div class="container">
+        <h2>Blog</h2>
+        <table class="table table-bordered">
+            <tr>
+                <th>ID</th>
+                <th>BAŞLIK</th>
+                <th>GÜNCELLE</th>
+                <th>DETAY</th>
+                <th>SİL</th>
+                
+            </tr>
+            @foreach(var item in Model)
+            {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Header</td>
+                <td><a href="/Admin/UpdateBlog/@item.ID" class="btn btn-warning">Güncelle</a></td>
+                <td><a href="/Blog/BlogDetail/@item.ID" class="btn btn-secondary">Detaylar</a></td>
+                <td><a href="/Admin/DeleteBlog/@item.ID" class="btn btn-danger">Sil</a></td>
+            </tr>
+            }
+        </table>
+        <td><a href="/Admin/CreateBlog/" class="btn btn-success">Yeni Blog Ekle</a></td>
+       
+    </div>
+</section>
