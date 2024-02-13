@@ -8,6 +8,10 @@
 1) Uygulama admin paneli ve kullanıcı paneli olarak iki panel üzerinden ilerler.
 2) Admin paneline erişim için log işlemi gerektirir.
 
+ ## Proje Bileşenleri 
+* Asp.Net Mvc5 web çatısı ve EF/CodeFirst yaklaşımı ile projemi geliştirdim. Tasarım deseni olarak Design Pattern yanında Js,Css ve Html kodları kullandım.
+* Form Authentication
+
 #### Admin
 * Yayımlanacak olan blogları düzenler.
 * Bloglara yapılan yorumları inceler ve gerektiğinde siler.
