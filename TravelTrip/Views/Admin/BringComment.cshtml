@@ -1,33 +1,37 @@
 ﻿@model TravelTrip.Models.Siniflar.Yorumlar
+
+
 @{
     ViewBag.Title = "BringComment";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 
-@using (Html.BeginForm("UpdateComment", "Admin", FormMethod.Post))
+@using(Html.BeginForm("UpdateComment", "Admin", FormMethod.Post))
 {
-    <section class="work-section section">
-        <div class="container">
 
-            <label style="color: #09104C">ID</label>
-            @Html.TextBoxFor(x => x.ID, new { @class = "form-control", style = "width:900px; color:brown;", @readonly = "readonly" })
-            <br />
-            <label style="color: #09104C">Başlık</label>
-            @Html.TextBoxFor(x => x.UserName, new { @class = "form-control", style = "width:900px; color:brown;" })
-            <br />
-            <label style="color: #09104C">Tarih</label>
-            @Html.TextBoxFor(x => x.Mail, new { @class = "form-control", style = "width:900px; color:brown;" })
-            <br />
-            <label style="color: #09104C">Tanıtım Metni</label>
-            @Html.TextAreaFor(x => x.Comment, new { @class = "form-control", style = "width:900px; color:brown;" })
-            <br />
+<section class="work-section section">
+    <div class="container">
 
-            <label style="color: #09104C">Tanıtım Metni</label>
-            @Html.TextAreaFor(x => x.Blog.Header, new { @class = "form-control", style = "width:900px; color:brown;" })
-            <br />
+        <label>ID</label>
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+        <br />
+        <label>Kullanıcı Adı</label>
+        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+        <br />
+        <label>Mail</label>
+        @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+        <br />
+        <lable>Yorum</lable>
+        @Html.TextAreaFor(x => x.Comment, new { @class = "form-control" })
+        <br />
 
-            <button class="btn btn-primary">Güncelle</button>
-        </div>
-    </section>
+        <lable>Blog</lable>
+        @Html.TextAreaFor(x => x.Blog.Header, new { @class = "form-control" })
+        <br />
+
+
+        <button class="btn btn-primary">Güncelle</button>
+    </div>
+</section>
 }

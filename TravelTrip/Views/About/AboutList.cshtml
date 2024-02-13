@@ -1,0 +1,35 @@
+﻿@using TravelTrip.Models.Siniflar
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "AboutList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="contact-section section" id="section-3">
+    <div class="container">
+        <div class="title">
+            <h3>Hakkımızda Sayfası</h3>
+        </div>
+        <table class="table table-bordered">
+            <tr>
+                <th>ID</th>
+                <th>Resim Yolu</th>
+                <th>Metin</th>
+                <th>Güncelle</th>
+                <th>Göster</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.ImageUrl</td>
+                    <td>@item.Description</td>
+                    <td><a href="/About/BringAbout/@item.ID" class="btn btn-primary">Güncelle</a></td>
+                    <td><a href="/About/Index/" class="btn btn-secondary">Göster</a></td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+</section>

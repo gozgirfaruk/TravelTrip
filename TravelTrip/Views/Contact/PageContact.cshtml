@@ -1,0 +1,77 @@
+﻿@model TravelTrip.Models.Siniflar.Iletisim
+
+@{
+    ViewBag.Title = "PageContact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+           
+            
+        </div>
+    </div>
+    <div class="header-bottom">
+
+    </div>
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3>İletişim Bilgileri</h3>
+                <p> Bize her zaman ulaşabilirsiniz! Hemen formu doldurun..!</p>
+            </div>
+            @using(Html.BeginForm("SendMessage", "Contact", FormMethod.Post))
+            {
+                <div class="form">
+                    <form class="cmxform" id="contactForm" method="post">
+                        <div>
+                            <label>İsim</label>
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @required="required"})
+                        </div>
+                        <div>
+                            <label>Soyisim</label>
+                            @Html.TextBoxFor(x => x.Surname, new { @class = "form-control", @required = "required" })
+                        </div>
+                        <div>
+                            <label>E-posta</label>
+                            @Html.TextBoxFor(x => x.Mail, new { @class = "form-control", @required = "required" })
+                        </div>
+
+                        <div class="form1">
+                            <div>
+                                <label>Mesaj</label>
+                                @Html.TextAreaFor(x => x.Message, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-warning">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            }
+            <div class="clear"></div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

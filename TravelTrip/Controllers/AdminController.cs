@@ -96,5 +96,6 @@ namespace TravelTrip.Controllers
             return RedirectToAction("Index");
         }
 
+   
     }
 }

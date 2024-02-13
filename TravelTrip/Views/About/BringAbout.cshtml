@@ -1,0 +1,87 @@
+﻿@model TravelTrip.Models.Siniflar.Hakkimizda
+
+@{
+
+    ViewBag.Title = "BringAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Simply Amazed HTML Template by Tooplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/tooplate-simply-amazed.css" type="text/css" />
+    <!--
+
+    Tooplate 2123 Simply Amazed
+
+    https://www.tooplate.com/view/2123-simply-amazed
+
+    -->
+</head>
+
+<body>
+    <div id="outer">
+
+
+        <button class="navbar-button collapsed" type="button">
+            <span class="menu_icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+
+        <main id="content-box" class="order-first">
+            @using (Html.BeginForm("UpdateAbout", "About", FormMethod.Post))
+            {
+                <section class="contact-section section" id="section-4">
+                    <div class="container">
+                        <div class="title">
+                            <h3>Güncelle</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mb-4 contact-form">
+                                <div class="form tm-contact-item-inner">
+                                    <div class="form-group">
+                                        @Html.HiddenFor(x=>x.ID)
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(x => x.ImageUrl, new { @style = "width:450px; color:brown;" })
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.TextAreaFor(x => x.Description, new { @style = "width:450px; color:brown; height:150px;" })
+                                    </div>
+                                    <div class="form-group text-right">
+                                        <button class="btn btn-warning">Güncelle</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer container container-2">
+                        <div class="row">
+                            <p class="col-sm-7">Copyright 2021 Simply Amazed Co.</p>
+                            <p class="col-sm-5 text-right design">Design: <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate</a></p>
+                        </div>
+                    </footer>
+                </section>
+            }
+            </main>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
