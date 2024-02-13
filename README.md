@@ -10,7 +10,7 @@
 
  ## Proje Bileşenleri 
 * Asp.Net Mvc5 web çatısı ve EF/CodeFirst yaklaşımı ile projemi geliştirdim. Tasarım deseni olarak Design Pattern yanında Js,Css ve Html kodları kullandım.
-* Form Authentication
+* Login ekranı için Form Authentication
 
 #### Admin
 * Yayımlanacak olan blogları düzenler.
