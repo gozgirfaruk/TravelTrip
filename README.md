@@ -28,25 +28,38 @@
 
 # UYGULAMA İÇİ GÖRÜNTÜLER
 
-## Admin Login  
-![Ekran Görüntüsü (83)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/40d35def-1b3b-4640-a36c-d05c904cf3ec)
 
-
-## Admin Blog 
-![Ekran Görüntüsü (84)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/ec3a01f8-446d-4f47-8535-4ae2fffc8bb7)
-
-## Admin Comment 
-![Ekran Görüntüsü (85)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/1a9f77f3-7dfd-4e7a-aa8c-d5aee8fb0bd8)
-
-## Admin Message 
-![Ekran Görüntüsü (89)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/0794da48-f83d-49e0-827c-ecac8fd1e3e6)
-
-## User Home
+# USER
+### Home
 ![Ekran Görüntüsü (91)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/742509d7-b721-4a77-8cac-3781da11e435)
 
-## User Blog
+### Blog
 ![Ekran Görüntüsü (92)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/15f787b2-d40a-4559-8abf-4d7d36148218)
 
-## User Contact
+### Contact
 ![Ekran Görüntüsü (93)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/ecf21f62-d8af-42f7-9bcb-d984c634aafc)
+
+### Yorum
+![yorum](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/6048b507-93ba-4451-befa-64f122ec5ed9)
+
+
+# Admin
+
+### Login
+![Ekran Görüntüsü (83)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/a0c77220-a9b4-4821-980d-65ee48f54cc3)
+
+### Blog
+![Ekran Görüntüsü (84)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/3a8e0ec9-bf1b-4dab-8f99-10d964fcb6b5)
+
+### Blog Yorum
+![Ekran Görüntüsü (89)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/e71d2439-9464-4663-96ca-c533ee14723a)
+
+###  Hakkımızda
+![Ekran Görüntüsü (87)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/05ad455e-78fc-41d1-b4bd-51b387df1062)
+
+### İletişim
+![Ekran Görüntüsü (89)](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/1750d943-c5d0-4597-b820-a5e90b141257)
+
+### Diagram
+![bak](https://github.com/gozgirfaruk/TravelTrip/assets/125920944/f7cff1f1-cb05-40fd-b4b3-2bc9c273ac2b)
 
